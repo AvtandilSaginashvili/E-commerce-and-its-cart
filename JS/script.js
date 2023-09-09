@@ -31,8 +31,21 @@ axios.get("https://fakestoreapi.com/products").then(function(response){
 
         var cartItem = document.createElement("button");
         cartItem.type = "button";
-        cartItem.setAttribute("onclick", "addCart");
         cartItem.classList.add("cartimg");
+
+        var cartStorage = document.getElementById("cartCount");
+        cartStorage.classList.add("cartco");
+        var x = 0;
+
+        cartStorage.innerText = x;
+
+        cartItem.addEventListener("click", function() {
+
+            x++;
+
+            cartStorage.innerHTML = x;
+
+        })
 
         var cartpic = document.createElement("img");
         cartpic.src = "./pics/Add To Cart.png";
@@ -70,16 +83,6 @@ axios.get("https://fakestoreapi.com/products").then(function(response){
 
         row.appendChild(col4);
 
-
-        function addCart() {
-
-        var count = document.getElementById("cartcount");
-        var x = 0;
-        x.innerText = count;
-
-        if ()
-
-        }
 
 
     });
