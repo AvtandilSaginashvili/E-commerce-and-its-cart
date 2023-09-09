@@ -97,6 +97,11 @@ body {
     margin: 0;
 }
 
+.padding-mob {
+    padding-top: 48px;
+    padding-left: 48px;
+}
+
 .inpdiv {
     width: 443px;
     height: 60px;
@@ -122,6 +127,16 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 125.5%;
+}
+
+.search-inp-mob {
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background-color: #FFFFFF;
+    padding-left: 30px;
+    border-radius: 15px;
 }
 
 .search-butt {
@@ -368,11 +383,8 @@ body {
         width: 100%;
     }
 
-    .search-inp {
-        width: 187px;
+    .padding-mob {
+        padding: 0;
     }
 
-    .search-butt {
-        width: 97px;
-    }
 }
