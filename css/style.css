@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-B;
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+
+
+/* Navbar */
+
+
+.navigation {
+    color: #8B8E99 !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all .2s !important;
+}
+
+.navigation:hover {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8B8E99;
+    text-shadow: 0px 14px 4px rgba(139,142,153,0.34);
+}
+
+.navigation2 {
+    color: #8B8E99 !important;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: all .5s !important;
+}
+
+.navigation2:hover {
+    background-color: transparent !important;
+    text-decoration: underline;
+    transform: translateX(10px);
+}
+
+.cart-count {
+    width: 13px;
+    height: 13px;
+    background-color: #3858D6;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
+
+.cartco {
+    font-size: 9px;
+    color: white;
+}
+
+/* 1 Container */
+
+
+.h1-discover {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125.5%;
+    margin-top: 154px;
+}
+
+.p-find {
+    color: #8B8E99;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+    margin: 0;
+}
+
+.inpdiv {
+    width: 443px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    margin-top: 47px;
+}
+
+.search-inp {
+    width: 265px;
+    height: 21px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 56px;
+}
+
+.search-inp::placeholder {
+    color: rgba(139, 142, 153, 0.70);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+}
+
+.search-butt {
+    width: 112px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    background-color: #3858D6;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125.5%;
+}
+
+
+
+/* 2 Container */
+
+
+.h3-apple {
+    color: #1E1D1D;
+    font-family: Inter-B;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 26px;
+    margin-top: 15px;
+}
+
+.p-apple {
+    color: #8B8E99;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 26px;
+}
+
+
+
+/* 3 Container */
+
+
+.p-find2 {
+    color: #3858D6;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.h3-latest {
+    color: #1E1D1D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wishlist {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+
+.boxHover {
+    position: relative;
+}
+
+.boxHover:hover .cartimg {
+    display: block !important;
+}
+
+.boxHover:hover .wishlist {
+    display: block !important;
+}
+
+.imgsize {
+    width: 100%;
+    height: 330px;
+    cursor: pointer;
+}
+
+.cartimg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 2;
+    display: none;
+    transition: 0.5s;
+}
+
+.cartimg:active {
+    transform: scale(0.95);
+}
+
+
+.h6-applesmart {
+    color: #1E1D1D;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.p-price {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120.5%;
+    text-align: center;
+}
+
+.viewmore {
+    width: 196px;
+    height: 46px;
+    background-color: #3858D6;
+    border: none;
+    border-radius: 15px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+
+/* 4 Container */
+
+
+.h6-name {
+    color: #1E1D1D;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+.p-desc {
+    color: #8B8E99;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.indi {
+    box-sizing: content-box !important;
+    width: 18px !important;
+    height: 18px !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background-color: #D9D9D9 !important;
+}
+
+.indi:focus {
+    background-color: #3F57CE !important;
+}
+
+
+
+/* 5 Container */
+
+
+.h3-subscribe {
+    color: #1E1D1D;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 95px;
+}
+
+.p-get {
+    color: #8B8E99;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* Last Container */
+
+
+.last {
+    background-color: #0B0B0B;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-copyright {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.5%;
+    margin: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .buttonsdiv {
+        justify-content: end;
+    }
+
+    .inpdiv {
+        width: 100%;
+    }
+
+    .search-inp {
+        width: 187px;
+    }
+
+    .search-butt {
+        width: 97px;
+    }
+}
