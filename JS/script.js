@@ -35,15 +35,12 @@ axios.get("https://fakestoreapi.com/products").then(function(response){
 
         var cartStorage = document.getElementById("cartCount");
         cartStorage.classList.add("cartco");
-        var x = 0;
+        
 
-        cartStorage.innerText = x;
-
+        cartStorage = [];
         cartItem.addEventListener("click", function() {
 
-            x++;
-
-            cartStorage.innerHTML = x;
+            
 
         })
 
